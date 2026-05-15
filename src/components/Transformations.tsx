@@ -1,5 +1,7 @@
 import { motion } from 'motion/react';
 import { Instagram } from 'lucide-react';
+import imgBefore from '../assets/images/regenerated_image_1778606840128.jpg';
+import imgAfter from '../assets/images/regenerated_image_1778606840938.jpg';
 
 export default function Transformations() {
   const cases = [
@@ -7,13 +9,13 @@ export default function Transformations() {
       name: "JP",
       time: "Before",
       result: "60kgs",
-      img: "/src/assets/images/regenerated_image_1778606840128.jpg"
+      img: imgBefore
     },
     {
       name: "JP",
       time: "After",
       result: "84kgs",
-      img: "/src/assets/images/regenerated_image_1778606840938.jpg"
+      img: imgAfter
     }
   ];
 

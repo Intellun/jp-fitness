@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { CheckCircle2, ShieldCheck, Trophy, Award } from 'lucide-react';
+import coachImg from '../assets/images/regenerated_image_1778601336093.jpg';
 
 export default function About() {
   const stats = [
@@ -31,7 +32,7 @@ export default function About() {
               <div className="relative max-w-xs mx-auto lg:mx-0 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
                 <div className="absolute -inset-1 bg-gradient-to-tr from-brand-primary/10 to-white/5 blur-xl rounded-3xl opacity-50"></div>
                 <img 
-                  src="/src/assets/images/regenerated_image_1778601336093.jpg" 
+                  src={coachImg} 
                   alt="JP Mourani" 
                   className="relative rounded-2xl w-full aspect-[4/5] object-cover shadow-2xl border border-white/10 transition-all duration-700 contrast-[1.15] brightness-[1.05]"
                   referrerPolicy="no-referrer"
