@@ -34,7 +34,7 @@ export default function About() {
                 <img 
                   src={coachImg} 
                   alt="JP Mourani" 
-                  className="relative rounded-2xl w-full aspect-[4/5] object-cover shadow-2xl border border-white/10 transition-all duration-700 contrast-[1.15] brightness-[1.05]"
+                  className="relative rounded-2xl w-full aspect-[4/5] object-cover shadow-2xl border border-white/10 transition-all duration-700"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute bottom-4 left-4 right-4 glass p-4 rounded-xl border border-white/10 backdrop-blur-2xl">
