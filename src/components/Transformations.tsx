@@ -61,7 +61,7 @@ export default function Transformations() {
                 “These results were earned through discipline, structure, and consistency without compromise.”
             </p>
             <motion.a
-                href={import.meta.env.VITE_INSTAGRAM_URL || "https://instagram.com"}
+                href={import.meta.env.VITE_INSTAGRAM_URL || "https://www.instagram.com/jpmourani"}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

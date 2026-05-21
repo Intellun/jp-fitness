@@ -15,7 +15,7 @@ export default function Footer() {
 
         <div className="flex gap-10">
           <a 
-            href={import.meta.env.VITE_INSTAGRAM_URL || "https://instagram.com"} 
+            href={import.meta.env.VITE_INSTAGRAM_URL || "https://www.instagram.com/jpmourani"} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-zinc-500 hover:text-brand-primary transition-colors uppercase text-[10px] font-black tracking-widest"
@@ -23,7 +23,7 @@ export default function Footer() {
             Instagram
           </a>
           <a 
-            href={import.meta.env.VITE_TIKTOK_URL || "https://tiktok.com"} 
+            href={import.meta.env.VITE_TIKTOK_URL || "https://www.tiktok.com/@jp_fitness04"} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-zinc-500 hover:text-brand-primary transition-colors uppercase text-[10px] font-black tracking-widest"

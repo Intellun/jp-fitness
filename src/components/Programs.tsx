@@ -9,6 +9,7 @@ export default function Programs() {
       period: "per month",
       desc: "built for clients who want structure, accountability, and results from anywhere.",
       features: [
+        "12 session",
         "custom training program",
         "exercise technique feedback",
         "weekly progress tracking"
