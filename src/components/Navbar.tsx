@@ -66,9 +66,15 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <button className="w-full py-4 bg-white text-black font-bold uppercase tracking-widest rounded-xl">
+          <a 
+            href="https://api.whatsapp.com/send?phone=96176644998&text=Hey%20JP%2C%20I%E2%80%99m%20ready%20to%20start%20my%20transformation."
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="w-full py-4 bg-white text-black font-bold uppercase tracking-widest rounded-xl text-center block"
+          >
             Start Your Transformation
-          </button>
+          </a>
         </motion.div>
       )}
     </nav>
