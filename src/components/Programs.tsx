@@ -61,7 +61,7 @@ export default function Programs() {
               key={i}
               className={`relative p-12 border-white/10 flex flex-col ${i !== tiers.length - 1 ? 'md:border-r border-b md:border-b-0' : ''} ${
                 tier.popular 
-                  ? 'bg-brand-primary text-black z-10 md:-translate-y-4 md:scale-105 shadow-2xl' 
+                  ? 'bg-brand-primary text-white z-10 md:-translate-y-4 md:scale-105 shadow-2xl shadow-brand-primary/30' 
                   : 'bg-neutral-950 text-white'
               }`}
             >
@@ -74,21 +74,21 @@ export default function Programs() {
               <div className="min-h-[180px]">
                 <h3 className="text-xs font-black uppercase tracking-[0.3em] mb-10 opacity-50">Tier 0{i+1}</h3>
                 <h4 className="text-3xl font-black italic tracking-tighter mb-4 uppercase">{tier.name}</h4>
-                <p className={`text-xs mb-10 ${tier.popular ? 'text-black/60' : 'text-zinc-500'} font-black uppercase tracking-wide leading-relaxed`}>{tier.desc}</p>
+                <p className={`text-xs mb-10 ${tier.popular ? 'text-white/80' : 'text-zinc-500'} font-black uppercase tracking-wide leading-relaxed`}>{tier.desc}</p>
               </div>
               
               <div className="flex items-baseline gap-2 mb-12">
                 <span className="text-5xl font-black italic tracking-tighter uppercase">${tier.price}</span>
-                <span className={`text-[10px] font-black uppercase tracking-widest ${tier.popular ? 'text-black/40' : 'text-zinc-600'}`}>/ {tier.period}</span>
+                <span className={`text-[10px] font-black uppercase tracking-widest ${tier.popular ? 'text-white/60' : 'text-zinc-600'}`}>/ {tier.period}</span>
               </div>
 
               {tier.highlight && (
-                <div className={`mb-12 p-6 border ${tier.popular ? 'border-black/10 bg-black/5' : 'border-white/10 bg-white/5'} rounded-xl transition-all hover:scale-[1.02]`}>
+                <div className={`mb-12 p-6 border ${tier.popular ? 'border-white/20 bg-black/20' : 'border-white/10 bg-white/5'} rounded-xl transition-all hover:scale-[1.02]`}>
                   <div className="flex justify-between items-start mb-4">
                     <span className="text-[10px] font-black uppercase tracking-[0.2em]">{tier.highlight.title}</span>
                     <span className="text-[10px] font-black uppercase tracking-widest text-right">{tier.highlight.price}</span>
                   </div>
-                  <p className={`text-[9px] font-black uppercase tracking-wider ${tier.popular ? 'text-black/40' : 'text-zinc-500'}`}>
+                  <p className={`text-[9px] font-black uppercase tracking-wider ${tier.popular ? 'text-white/60' : 'text-zinc-500'}`}>
                     {tier.highlight.desc}
                   </p>
                 </div>
@@ -97,7 +97,7 @@ export default function Programs() {
               <div className="space-y-6 mb-12">
                 {tier.features.map((feature, idx) => (
                   <div key={idx} className="flex items-center gap-3">
-                    <div className={`w-2 h-2 rotate-45 ${tier.popular ? 'bg-black' : 'bg-brand-primary'}`} />
+                    <div className={`w-2 h-2 rotate-45 ${tier.popular ? 'bg-white' : 'bg-brand-primary'}`} />
                     <span className="text-[10px] font-black uppercase tracking-widest">{feature}</span>
                   </div>
                 ))}
@@ -109,7 +109,7 @@ export default function Programs() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className={`flex items-center justify-center w-full py-5 mt-auto font-black uppercase tracking-[0.2em] text-[10px] transition-all border ${tier.popular ? 'bg-black text-white border-black hover:bg-neutral-900 shadow-xl' : 'bg-brand-primary text-black border-brand-primary hover:bg-white hover:border-white'}`}
+                className={`flex items-center justify-center w-full py-5 mt-auto font-black uppercase tracking-[0.2em] text-[10px] transition-all border ${tier.popular ? 'bg-black text-white border-black hover:bg-neutral-900 shadow-xl' : 'bg-brand-primary text-white border-brand-primary hover:bg-white hover:text-black hover:border-white'}`}
               >
                 Apply to Join
               </motion.a>

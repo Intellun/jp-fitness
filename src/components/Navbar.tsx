@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Menu, X, Instagram, Youtube, MessageCircle } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Logo from './Logo';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,9 +26,11 @@ export default function Navbar() {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-black tracking-tighter italic uppercase"
+          className="flex items-center"
         >
-          JP FITNESS<span className="text-brand-primary">.</span>
+          <a href="#" className="flex items-center">
+            <Logo className="h-10 md:h-12 w-auto" showText={true} />
+          </a>
         </motion.div>
 
         {/* Desktop Nav */}

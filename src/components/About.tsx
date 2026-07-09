@@ -55,7 +55,7 @@ export default function About() {
                 <motion.div 
                   key={i} 
                   whileHover={{ scale: 1.02, y: -2 }}
-                  className="bg-zinc-900/40 border border-white/5 p-4 rounded-2xl hover:border-brand-primary/40 transition-all group flex flex-col justify-center min-h-[110px] hover:shadow-[0_0_30_rgba(234,179,8,0.1)] cursor-default"
+                  className="bg-zinc-900/40 border border-white/5 p-4 rounded-2xl hover:border-brand-primary/40 transition-all group flex flex-col justify-center min-h-[110px] hover:shadow-[0_0_30px_rgba(var(--brand-primary-rgb),0.2)] cursor-default"
                 >
                   <div className="text-2xl font-black italic tracking-tighter text-white mb-1 uppercase group-hover:text-brand-primary transition-colors leading-none">{stat.value}</div>
                   <div className="text-[9px] uppercase font-black tracking-widest text-zinc-600">{stat.label}</div>

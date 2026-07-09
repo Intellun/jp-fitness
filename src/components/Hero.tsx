@@ -35,7 +35,7 @@ export default function Hero() {
             target="_blank" 
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="group w-full sm:w-auto px-12 py-6 bg-brand-primary text-black font-black uppercase tracking-[0.3em] text-[10px] flex items-center justify-center gap-4 hover:bg-white transition-all shadow-2xl shadow-brand-primary/20"
+              className="group w-full sm:w-auto px-12 py-6 bg-brand-primary text-white font-black uppercase tracking-[0.3em] text-[10px] flex items-center justify-center gap-4 hover:bg-white hover:text-black transition-all shadow-2xl shadow-brand-primary/30"
             >
               Start Transformation
               <ArrowRight size={16} strokeWidth={3} className="group-hover:translate-x-1 transition-transform" />

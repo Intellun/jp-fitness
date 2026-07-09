@@ -46,8 +46,8 @@ export default function App() {
                viewport={{ once: true }}
              >
                <h2 className="text-6xl md:text-[100px] font-black italic tracking-tighter mb-8 leading-[0.85] uppercase">
-                 Forged <br />
-                 In Fire<span className="text-brand-primary">.</span>
+                 Build <br />
+                 Your Legacy<span className="text-brand-primary">.</span>
                </h2>
                <p className="text-zinc-500 text-lg md:text-xl font-black uppercase tracking-widest mb-12 max-w-2xl mx-auto leading-relaxed">
                  ready to build your best physique?
@@ -57,7 +57,7 @@ export default function App() {
                   target="_blank"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-block px-16 py-6 bg-brand-primary text-black font-black uppercase tracking-[0.3em] text-xs hover:bg-white transition-all shadow-2xl shadow-brand-primary/40"
+                  className="inline-block px-16 py-6 bg-brand-primary text-white font-black uppercase tracking-[0.3em] text-xs hover:bg-white hover:text-black transition-all shadow-2xl shadow-brand-primary/40"
                >
                  Start Transformation
                </motion.a>

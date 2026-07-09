@@ -1,12 +1,13 @@
 import { Instagram, Youtube, Twitter, Mail, MessageCircle } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
     <footer className="bg-black border-t border-white/10 py-16 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
-        <div className="text-center md:text-left">
-          <div className="text-2xl font-black italic tracking-tighter mb-4 uppercase">
-            JP MOURANI<span className="text-brand-primary">.</span>
+        <div className="text-center md:text-left flex flex-col items-center md:items-start">
+          <div className="mb-4">
+            <Logo className="h-12 w-auto" showText={true} />
           </div>
           <p className="text-zinc-600 text-[10px] font-black uppercase tracking-[0.2em]">
             © 2026 JP Mourani Performance. All rights reserved.
