@@ -13,7 +13,6 @@ import Navbar from './components/Navbar.tsx';
 import Hero from './components/Hero.tsx';
 import About from './components/About.tsx';
 import Transformations from './components/Transformations.tsx';
-import Features from './components/Features.tsx';
 import Programs from './components/Programs.tsx';
 import FAQ from './components/FAQ.tsx';
 import Footer from './components/Footer.tsx';
@@ -29,7 +28,6 @@ export default function App() {
         <Hero />
         <About />
         <Transformations />
-        <Features />
         <Programs />
         <FAQ />
 
