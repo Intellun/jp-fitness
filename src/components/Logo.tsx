@@ -65,7 +65,7 @@ export default function Logo({ className = "h-12", showText = true }: LogoProps)
         {/* P Letter (Right) - Slanted Brand Blue (Extended to match full height) */}
         <path 
           fillRule="evenodd"
-          d="M 220,142 L 270,38 L 350,38 C 385,38 400,55 395,80 C 390,105 365,120 335,120 L 260,120 L 249,142 Z M 260,58 L 325,58 C 345,58 360,68 355,79 C 350,90 335,100 315,100 L 240,100 Z" 
+          d="M 207,142 L 280,38 L 310,38 C 355,38 380,50 375,75 C 370,95 330,95 270,95 L 237,142 Z M 296,58 C 325,58 345,62 345,69 C 345,76 315,80 281,80 Z" 
           fill="var(--color-brand-primary)"
         />
 

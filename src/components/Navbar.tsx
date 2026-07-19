@@ -21,7 +21,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-md border-b border-white/10 py-4' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/60 backdrop-blur-xl border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
@@ -39,7 +39,7 @@ export default function Navbar() {
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 hover:text-brand-primary transition-colors"
+              className="text-[10px] font-bold uppercase tracking-[0.25em] text-zinc-400 hover:text-white transition-colors duration-300"
             >
               {link.name}
             </a>
@@ -48,7 +48,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
@@ -57,14 +57,14 @@ export default function Navbar() {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden absolute top-full left-0 w-full bg-black border-b border-white/10 p-6 flex flex-col space-y-6"
+          className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-2xl border-b border-white/5 p-8 flex flex-col space-y-6"
         >
           {navLinks.map((link) => (
             <a 
               key={link.name} 
               href={link.href} 
               onClick={() => setIsOpen(false)}
-              className="text-lg uppercase tracking-widest text-zinc-400 hover:text-white"
+              className="text-sm uppercase tracking-[0.2em] font-bold text-zinc-400 hover:text-white transition-colors duration-300"
             >
               {link.name}
             </a>
@@ -74,7 +74,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
-            className="w-full py-4 bg-white text-black font-bold uppercase tracking-widest rounded-xl text-center block"
+            className="w-full py-4.5 bg-brand-primary text-white font-bold uppercase tracking-[0.2em] text-[10px] rounded-full text-center block shadow-lg shadow-brand-primary/10"
           >
             Start Your Transformation
           </a>
