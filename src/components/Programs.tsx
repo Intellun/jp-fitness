@@ -5,7 +5,7 @@ export default function Programs() {
   const tiers = [
     {
       name: "online coaching",
-      price: "49.99",
+      price: "59.99",
       period: "per month",
       desc: "built for clients who want structure, accountability, and results from anywhere.",
       features: [
