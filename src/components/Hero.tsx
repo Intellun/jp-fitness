@@ -24,9 +24,6 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <span className="inline-block text-brand-primary text-[9px] md:text-[10px] font-black tracking-[0.4em] uppercase mb-6 bg-brand-primary/10 border border-brand-primary/20 px-4 py-1.5 rounded-full">
-            Elite Performance Coaching
-          </span>
           <h1 className="text-6xl md:text-[112px] font-black italic uppercase tracking-tighter mb-8 leading-[0.85] text-white">
             Build the <br />
             <span className="text-brand-primary">Body</span> you deserve<span className="text-brand-primary">.</span>
